@@ -1,0 +1,31 @@
+h1,p{
+    background-color: black;
+    color: aqua;
+}
+
+.one{
+    /* height and width */
+    height: 10px;
+    width: 200px;
+   /* border properties */
+    border: 2px solid rgb(255, 20, 20);
+    background-color: bisque;
+    text-align: center;
+
+    /* border radius */
+    border-radius: 10px;
+
+    /* margin */
+    margin: 1px 5px 0px 20px ;
+    /* margin-top,right,bottom,left (clockwise) */
+
+}
+
+div{
+    height: 10px;
+    width: 200px;
+    border: dashed red 2px;
+    padding: 5px 5px 50px 4px;
+}
+/* padding-top,right,bottom,left (clockwise) */
+

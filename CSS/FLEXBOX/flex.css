@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  /* flex start */
+  border: 2px solid rgb(25, 193, 179);
+  margin: 20px;
+}
+
+.row {
+  flex-direction: row-reverse;
+  /* row, row reverse */
+}
+
+.column {
+  flex-direction: column;
+  /* column reverse */
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background: lightblue;
+  border: 1px solid rgb(133, 23, 23);
+  text-align: center;
+  line-height: 60px;
+}
+
+body{
+  background-color: black;
+}

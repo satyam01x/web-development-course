@@ -1,0 +1,34 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+     /* display property  */
+     /* display: inline;  */
+    /* inline = only required content no extra padding and margin */
+    display: inline-block;
+/* inline-block for same padding and margin */
+}
+/* none  */
+#box{
+    background-color: blue;
+    
+    display: none; 
+    /* remove all content of box */
+}
+
+#box2{
+    background-color: gray;
+    
+   visibility: hidden;
+}
+
+
+/* RGBA */
+
+#RGBA{
+    background-color: rgba(255,0 , 0, 1);
+}
+
+body{
+    background-color: black;
+}

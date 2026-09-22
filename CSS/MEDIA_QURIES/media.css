@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* COMMON BOX STYLE */
+.box {
+  width: 300px;
+  padding: 20px;
+  margin: 15px auto;
+  border: 2px solid black;
+  font-weight: bold;
+  background: lightgray;
+}
+
+/* =========================
+   MAX-WIDTH MEDIA QUERIES
+========================= */
+
+/* Mobile */
+/* min = 0 to max  */
+@media (max-width: 480px) {
+  .max-480 {
+    background: red;
+    color: white;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .max-768 {
+    background: orange;
+  }
+}
+
+/* =========================
+   MIN-WIDTH MEDIA QUERIES
+========================= */
+/* min 480 to max */
+@media (min-width: 480px) {
+  .min-480 {
+    background: green;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .min-768 {
+    background: blue;
+    color: white;
+  }
+}
+
+/* =========================
+   RANGE (MIN + MAX)
+========================= */
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .range {
+    background: purple;
+    color: white;
+  }
+}

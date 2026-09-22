@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+/* FLEX CONTAINER */
+.container {
+  display: flex;
+  height: 180px;
+  border: 3px solid rgb(200, 32, 32);
+  margin: 20px;
+  background: #1725bc;
+}
+
+/* FLEX ITEMS */
+.box {
+  width: 60px;
+  height: 60px;
+  background: rgb(24, 197, 255);
+  border: 2px solid rgb(179, 21, 21);
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.tall {
+  height: 120px;
+  line-height: 120px;
+}
+
+/* =========================
+   JUSTIFY-CONTENT
+========================= */
+.jc-start   { justify-content: flex-start; }
+.jc-center  { justify-content: center; }
+.jc-end     { justify-content: flex-end; }
+.jc-between { justify-content: space-between; }
+.jc-around  { justify-content: space-around; }
+.jc-evenly  { justify-content: space-evenly; }
+
+/* =========================
+   ALIGN-ITEMS
+========================= */
+.ai-start  { align-items: flex-start; }
+.ai-center { align-items: center; }
+.ai-end    { align-items: flex-end; }
+
+/* =========================
+   FLEX-WRAP
+========================= */
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* =========================
+   ALIGN-CONTENT
+   (ONLY WORKS WITH WRAP)
+========================= */
+.ac-start   { align-content: flex-start; }
+.ac-center  { align-content: center; }
+.ac-between { align-content: space-between; }
+
+/* containers ki properties
+  item ki properties = self align, shrink , grow , order = arrage box order */
+
+/* JUSTIFY-CONTENT: START → items ko main-axis ke start par rakhta hai (row me left, column me top)
+JUSTIFY-CONTENT: CENTER → items ko main-axis ke beech me rakhta hai
+JUSTIFY-CONTENT: END → items ko main-axis ke end par rakhta hai (row me right, column me bottom)
+JUSTIFY-CONTENT: SPACE-BETWEEN → first aur last item edges par, beech me equal space deta hai
+JUSTIFY-CONTENT: SPACE-AROUND → har item ke around equal space deta hai
+JUSTIFY-CONTENT: SPACE-EVENLY → items ke beech aur edges par same space deta hai
+
+ALIGN-ITEMS: START → items ko cross-axis ke start par rakhta hai
+ALIGN-ITEMS: CENTER → items ko cross-axis ke beech me rakhta hai
+ALIGN-ITEMS: END → items ko cross-axis ke end par rakhta hai
+ALIGN-ITEMS: STRETCH → items ko container ki height tak stretch karta hai
+
+FLEX-WRAP → batata hai items ek hi line me rahenge ya next line me jayenge (wrap hone par next line)
+
+FLEX-FLOW → flex-direction aur flex-wrap ka shortcut hota hai
+
+ALIGN-CONTENT → works with wrap multiple rows ke beech spacing control karta hai (sirf tab kaam karta hai jab wrap on ho)
+
+
+
+FLEX-GROW → extra space me item kitna grow karega ye decide karta hai
+
+FLEX-SHRINK → space kam hone par item kitna shrink karega ye batata hai
+
+
+
+ALIGN-SELF → (highest priority) kisi ek single flex item ka alignment alag se control karta hai */

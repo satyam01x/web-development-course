@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* COMMON BOX STYLE */
+.box {
+    width: 250px;
+    height: 80px;
+    margin: 25px auto;
+    background-color: teal;
+    color: white;
+    line-height: 80px;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* smooth effect ke liye */
+    transition: all 2s ease;
+}
+
+/* ==============================
+   1️⃣ TRANSFORM: TRANSLATE
+   Element ko move karta hai
+================================ */
+.translate:hover {
+    transform: translate(50px, -50px);
+    /* x and y direction y(-) = upside, y(+) = downside */
+}
+
+/* ==============================
+   2️⃣ TRANSFORM: SCALE
+   Element ka size badhata / ghatata hai
+================================ */
+.scale:hover {
+    transform: scale(2); 
+    /* double size of it */
+}
+
+/* ==============================
+   3️⃣ TRANSFORM: ROTATE
+   Element ko ghumata hai
+================================ */
+.rotate:hover {
+    transform: rotate(90deg);
+}
+
+/* ==============================
+   4️⃣ TRANSFORM: SKEW
+   Element ko tilt karta hai
+================================ */
+.skew:hover {
+    transform: skew(20deg, 20deg);
+}
+
+/* ==============================
+   5️⃣ MULTIPLE TRANSFORMS
+   Ek sath multiple transform
+================================ */
+.multi:hover {
+    transform: translateX(40px) rotate(360deg) scale(1.2);
+}

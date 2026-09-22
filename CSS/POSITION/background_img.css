@@ -1,0 +1,27 @@
+#bg , #box1 , #box2{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+body{
+    background-image: url(lizard.jpeg);
+    background-size: cover;
+}
+
+#box2{
+    background-image: url(lizard.jpeg);
+    background-size: cover;
+    
+}
+P{
+    color: blanchedalmond;
+  
+}

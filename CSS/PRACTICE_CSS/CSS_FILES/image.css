@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(182, 247, 247);
+    background-image: url(lizardd.png);
+    background-size: cover;
+    
+}
+
+.container{
+    height: 1500px;
+    width: 1500px;
+    background-color: pink;
+    margin: 80px;
+    text-align: center;
+    display: inline-block;
+    /* background-image: url(lizardd.png);
+    background-size: cover; */
+
+}
+
+
+h1{
+    text-align: center;
+    padding: 50px;
+    color: red;
+}
+
+.event{
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 5px;
+   
+}
+
+#event{
+     height: 300px;
+    width: 1500px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+img{
+    height: 100px ;
+    width: 100px;
+    margin: 10px;
+
+}

@@ -1,0 +1,26 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: bisque;
+    border: 2px solid black;
+
+}
+
+#outer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 400px 0px 0px 400px;
+    
+}
+#inner{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    line-height: 150px;
+}

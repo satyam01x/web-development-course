@@ -1,0 +1,43 @@
+/* body{
+    font-size: 10px;
+} */
+
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(241, 21, 21);
+    color: aqua;
+    /* em */
+    font-size: 2rem;
+}
+
+#box2{
+    height:50%; /* the height will adjust according to their parent box height*/
+    /* width: 100px; */
+    background-color: blue;
+    color: burlywood;
+    /* 2em means double of parrent size */
+    /* font-size: 3em; */
+    /* exception case for width = width * its own font size */
+    width: 5em;
+    font-size: 2em;
+}
+/* rem = parent ka bhi parent font size */
+
+/* vh = viewport-height = cover whole screen vertically px */
+/* vw = viewport-width = cover whole screen horizontally px */
+body{
+    /* background-color: black; */
+}
+
+html{
+    font-size: 20px;
+}
+
+.parent{
+    font-size: 2rem;
+}
+
+.child{
+    font-size: 2em;
+}

@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(241, 13, 13);
+    color: aliceblue;
+}
+
+p {
+    color: cadetblue;
+    text-align: center;
+    line-height: 50px;
+    
+}
+

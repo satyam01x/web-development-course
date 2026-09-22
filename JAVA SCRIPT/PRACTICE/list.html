@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list item</title>
+</head>
+
+<body>
+    <input type="text" , placeholder="Enter list item " , id="input">
+    <button id="btn">Add Item</button>
+    <ul id="list"></ul>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        let value = document.getElementById("input").value;
+
+        let li = document.createElement("li");
+        li.innerText = value;
+
+        document.getElementById("list").appendChild(li);
+    });
+    
+</script>

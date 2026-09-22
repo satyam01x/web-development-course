@@ -1,0 +1,9 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-image: url(https://cdn.pixabay.com/photo/2025/11/06/10/17/garden-lizard-9940372_1280.jpg);
+    background-size: cover;
+    position: fixed;
+    color: rgb(250, 4, 4);
+    left: 90%;
+}

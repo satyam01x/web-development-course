@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
+
+<script>function removeduplicate(arr) {
+        let afterremove = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            if (!afterremove.includes(arr[i])) {
+                afterremove.push(arr[i]);
+            }
+        }
+
+        return afterremove;
+    }
+
+    console.log(removeduplicate([1, 11,1, 2,22, 5, 3]));
+</script>

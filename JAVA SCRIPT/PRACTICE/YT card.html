@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT video</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            height: 150px;
+            width: 80%;
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+            align-items: center;
+            border: 2px solid rgb(137, 134, 134);
+            border-radius: 8px;
+        }
+
+        .logo {
+            position: relative;
+            color: black;
+
+        }
+
+        .logo img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .time {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background-color: black;
+            color: white;
+            padding: 12px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .title {
+            padding: 10px;
+            /* background-color:black;
+            color: white; */
+        }
+
+        .title h1 {
+            color: white;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .title p {
+            margin-top: 5px;
+            color: rgb(237, 228, 228);
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+    function createcard(title, channel, views, time, duration, thumbnail) {
+        function formatviews(views) {
+            if (views >= 1000000) {
+               return (views / 1000000).toFixed(1) + "M";
+
+            }
+            else if (views >= 1000) {
+                return Math.floor(views / 1000) + "K";
+            }
+            return views;
+        }
+        let container = document.getElementById("container");
+        let card = document.createElement("div");
+        card.className = "container";
+
+        card.innerHTML = `
+          <div class="logo">
+            <img src="${thumbnail}" alt="thumbnail">
+            <span class="time">${duration}</span>
+        </div>
+        <div class="title">
+            <h1>${title}</h1>
+            <p>${channel} • ${formatviews(views)} views • ${time}</p>
+        </div>
+        `;
+        container.appendChild(card);
+    }
+    createcard("PRIME FOR A REASON !!" , "SATYAM FREE FIRE", 1000263,
+    "8 day ago",
+    "1:15",
+    "prime.avif" );
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+
+/* COMMON BOX STYLE */
+.box {
+    width: 250px;
+    height: 80px;
+    margin: 20px auto; 
+    background-color: steelblue;
+    color: white;
+    line-height: 80px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ==============================
+   1️⃣ TRANSITION-PROPERTY
+   Sirf selected property animate hogi
+================================ */
+.property {
+    transition-property: background-color,width ;
+    transition-duration: 2s;
+}
+/* phele transition property  or duration set kr liya ab sirf yhi property change ho jayegi within given duration */
+
+.property:hover {
+    background-color: crimson;
+    width: 350px; /* hover kerne pr width or color change hoga */
+}
+
+/* ==============================
+   2️⃣ TRANSITION-DURATION
+   Animation ka time
+================================ */
+.duration {
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.duration:hover {
+    width: 350px;
+}
+
+/* ==============================
+   3️⃣ TRANSITION-TIMING-FUNCTION
+   Animation ka flow / speed
+================================ */
+.timing {
+    transition: width ease 0.5s;
+}
+
+.timing:hover {
+    width: 350px;
+    background-color: blue;
+}
+
+/*
+Try changing:
+linear | ease | ease-in | ease-out | ease-in-out
+*/
+
+/* ==============================
+   4️⃣ TRANSITION-DELAY
+   Animation start hone se pehle wait
+================================ */
+.delay {
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+.delay:hover {
+    background-color: green;
+}
+
+/* ==============================
+   5️⃣ TRANSITION (SHORTCUT)
+   property + duration + timing + delay
+================================ */
+.all {
+    transition: all 0.8s ease;
+}
+
+.all:hover {
+    background-color: purple;
+    width: 350px;
+    letter-spacing: 3px;
+}

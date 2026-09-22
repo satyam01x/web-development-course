@@ -1,0 +1,18 @@
+div{
+    height: 350px;
+    width: 150px;
+    border: solid black 5px ;
+    background-color: rgba(22, 15, 33, 0.758);
+
+}
+
+
+
+.traffic{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black ;
+    border-radius: 50px;
+    margin-left: 20px;
+  
+}

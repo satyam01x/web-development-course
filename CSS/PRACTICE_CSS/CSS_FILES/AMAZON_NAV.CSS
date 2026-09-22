@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+div{
+    height: 60px;
+    background-color: #0f1111;
+}
+
+a{
+    margin-right: 250px;
+}
+#logo{
+color: #f08804;
+font-size: 25px;
+}

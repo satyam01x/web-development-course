@@ -1,0 +1,33 @@
+body{
+    height: vh;
+    display: flex;
+    justify-content: center;
+    background-color: #02020af1;
+    
+}
+
+
+
+#circular{
+    
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid rgb(251, 8, 8);
+    border-radius: 50%;
+    animation: loader 1s infinite ease-in-out;
+}
+
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+        border-color: rgb(240, 15, 15);
+    }
+    50%{
+        transform: rotate(180deg);
+        border-color: rgb(5, 43, 255);
+    }
+    100%{
+        transform: rotate(360deg);
+        border-color: rgb(241, 241, 19);
+    }
+}

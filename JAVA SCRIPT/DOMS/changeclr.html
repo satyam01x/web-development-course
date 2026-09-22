@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button-clr-change</title>
+</head>
+
+<body>
+
+    <button id="button">
+        click me
+    </button>
+
+</body>
+
+</html>
+
+<script>
+    let button = document.getElementById("button");
+    button.addEventListener("click", function () {
+        // button.innerText = "welcome bro ";
+        button.style.backgroundColor = "red";
+    });
+
+</script>

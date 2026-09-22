@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT video</title>
+    
+</head>
+
+<body>
+    <div id="containers">
+
+    </div>
+</body>
+<script>
+    function createcard(title, channel, views, time, duration, thumbnail) {
+        function formatviews(views) {
+            if (views >= 1000000) {
+               return (views / 1000000).toFixed(1) + "M";
+
+            }
+            else if (views >= 1000) {
+                return Math.floor(views / 1000) + "K";
+            }
+            return views;
+        }
+        let container = document.getElementById("containers");
+        let card = document.createElement("div");
+        card.className = "div inside container";
+        card.innerText = "kya haal hai mitrrr";
+        card.innerHTML = "<h1>Hello brother</h1>"
+        container.appendChild(card);
+    }
+    createcard("PRIME FOR A REASON !!" , "SATYAM FREE FIRE", 1000263,
+    "8 day ago",
+    "1:15",
+    "prime.avif" );
+</script>
+
+</html>
